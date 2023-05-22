@@ -1,5 +1,6 @@
 import React from 'react';
 import Counter from './Counter';
+import './Counter.css';
 
 const App = () => {
   return (
@@ -11,3 +12,5 @@ const App = () => {
 };
 
 export default App;
+
+
