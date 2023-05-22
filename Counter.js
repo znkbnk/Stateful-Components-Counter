@@ -17,13 +17,21 @@ const Counter = () => {
   };
 
   return (
-    <div>
-      <h2>Counter</h2>
-      <p>Count: {count}</p>
-      <button onClick={increment} disabled={count === MAX_VALUE}>
+    <div className="counter">
+      <h2 className="counter-heading">Counter</h2>
+      <p className="counter-value">Count: {count}</p>
+      <button
+        className="counter-button"
+        onClick={increment}
+        disabled={count === MAX_VALUE}
+      >
         Increment
       </button>
-      <button onClick={decrement} disabled={count === 0}>
+      <button
+        className="counter-button"
+        onClick={decrement}
+        disabled={count === 0}
+      >
         Decrement
       </button>
     </div>
@@ -31,3 +39,4 @@ const Counter = () => {
 };
 
 export default Counter;
+
